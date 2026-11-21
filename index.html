@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
+<title>英语作文句型背诵</title>
+<style>
+:root{--bg:#f6f7fb;--card:#ffffff;--ink:#16213e;--muted:#7a8296;--line:#e7eaf2;--brand:#3d5afe;--brand2:#536dfe;--danger:#ef5350;--warn:#ffb300;--ok:#26a69a;--radius:22px;--shadow:0 12px 30px rgba(28,42,90,.10)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}
+body{min-height:100vh;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.app{max-width:520px;margin:0 auto;padding:18px 16px 0}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.top h1{font-size:24px;margin:0;letter-spacing:.2px}
+.top .day{font-size:13px;color:var(--muted)}
+.hero{background:linear-gradient(135deg,#4f6bff,#6c8cff);color:#fff;border-radius:26px;padding:18px;margin-bottom:16px;box-shadow:var(--shadow)}
+.hero .label{font-size:13px;opacity:.86}
+.hero .count{font-size:34px;font-weight:800;margin:4px 0 8px}
+.hero .sub{font-size:13px;line-height:1.55;opacity:.94}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 4px 16px rgba(28,42,90,.04)}
+.tile .num{font-size:22px;font-weight:800;color:var(--brand)}
+.tile .cap{font-size:13px;color:var(--muted);margin-top:4px}
+.section-title{font-size:17px;font-weight:800;margin:18px 0 10px}
+.cat-list{display:flex;flex-direction:column;gap:10px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:13px 14px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 14px rgba(28,42,90,.04)}
+.cat .name{font-size:16px;font-weight:700}
+.cat .meta{font-size:12px;color:var(--muted);margin-top:3px}
+.cat .go{color:var(--brand);font-size:14px;font-weight:700}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px;color:#4a5268}
+.chip.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.study-card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;min-height:330px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between}
+.study-card .tag{font-size:12px;color:var(--brand);font-weight:700;margin-bottom:12px}
+.study-card .zh{font-size:25px;line-height:1.45;font-weight:800;white-space:pre-wrap}
+.study-card .usage{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.6}
+.study-card .en{font-size:19px;line-height:1.55;margin-top:18px;color:#213159;white-space:pre-wrap;background:#f1f4ff;border-radius:16px;padding:14px}
+.study-card .note{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.6}
+.hidden{display:none}
+.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.btn{border:0;border-radius:16px;padding:13px 8px;font-size:14px;font-weight:700;background:#fff;border:1px solid var(--line)}
+.btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.btn.ok{background:#e5f7f4;color:#118a78;border-color:#b7e8df}
+.btn.warn{background:#fff6e5;color:#b07b08;border-color:#f5dd9b}
+.btn.danger{background:#ffecec;color:#c43b3b;border-color:#f4b8b8}
+.bottom{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:520px;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:20}
+.nav{text-align:center;font-size:13px;color:var(--muted);padding:8px 0;border-radius:14px;font-weight:700}
+.nav.active{color:var(--brand)}
+.nav .ic{font-size:22px;display:block;margin-bottom:2px}
+.empty{padding:42px 18px;text-align:center;color:var(--muted);font-size:14px;line-height:1.7}
+.stat-row{display:flex;gap:10px;margin-bottom:16px}
+.stat{flex:1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;text-align:center}
+.stat b{display:block;font-size:20px;color:var(--brand)}
+.stat span{font-size:12px;color:var(--muted)}
+.list-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px;margin-bottom:10px}
+.list-card .t{font-weight:800;font-size:16px}
+.list-card .s{color:var(--muted);font-size:13px;margin-top:5px;line-height:1.5}
+.list-card .en{color:#2c3e5f;font-size:14px;line-height:1.5;margin-top:8px;white-space:pre-wrap}
+input,textarea,select{width:100%;border:1px solid var(--line);border-radius:14px;padding:11px;font-size:15px;background:#fff;font-family:inherit}
+label{font-size:13px;color:var(--muted);display:block;margin:10px 0 6px}
+.fab{position:fixed;right:16px;bottom:calc(84px + env(safe-area-inset-bottom));width:52px;height:52px;border-radius:50%;background:var(--brand);color:#fff;border:0;font-size:28px;box-shadow:0 10px 22px rgba(61,90,254,.35)}
+</style>
+</head>
+<body>
+<div class='app' id='app'></div>
+<nav class='bottom' id='bottomNav'>
+  <div class='nav active' data-view='learn'><span class='ic'>??</span>学习</div>
+  <div class='nav' data-view='cats'><span class='ic'>??</span>分类</div>
+  <div class='nav' data-view='me'><span class='ic'>????</span>我的</div>
+</nav>
+<script>
+const STORE_KEY='english-essay-sentence-trainer-v1';
+const DEFAULT_NEW=8;
+const CATS=[
+ {id:'transition',name:'自然过渡',desc:'开头段、结尾句、衔接词'},
+ {id:'advanced',name:'高级表达',desc:'高分替换与强调句式'},
+ {id:'example',name:'举例',desc:'举例论证句与结构'},
+ {id:'argument',name:'铺面论证法',desc:'论证铺开方法'},
+ {id:'growth',name:'个人成长类',desc:'成长、学习、品质'},
+ {id:'environment',name:'环境类',desc:'环保、生态、可持续'},
+ {id:'tech',name:'科技类',desc:'AI、数字化、互联网'},
+ {id:'society',name:'社会类',desc:'社会问题、公共议题'},
+ {id:'culture',name:'文化类',desc:'文化传承、交流、价值'},
+ {id:'cet6',name:'近十年六级作文汇总',desc:'真题表达与常用模板'}
+];
+let state=loadState();
+let view='learn';
+let catFilter='all';
+let typeFilter='all';
+let revealed=false;
+let queue=[];
+let queueIndex=0;
+let currentCard=null;
+const SEED=[
+{id:'tr1',cat:'transition',type:'开头段',en:'In an era characterized by rapid technological advancement, digital innovation has profoundly reshaped the way we live and learn.',zh:'在科技快速发展的时代，数字创新深刻改变了我们生活与学习的方式。',usage:'科技类、社会类开头：宏观背景句',note:'划线处可替换：rapid technological advancement / globalization / social change'},
+{id:'tr2',cat:'transition',type:'开头段',en:'Against this backdrop, the growing reliance on artificial intelligence has sparked heated debate.',zh:'在此背景下，对人工智能日益增长的依赖引发了激烈讨论。',usage:'承接背景，引入议题',note:'Against this backdrop 适合收缩到具体议题'},
+{id:'tr3',cat:'transition',type:'开头段',en:'From my perspective, while AI offers undeniable convenience, excessive dependence on it may undermine human creativity.',zh:'在我看来，虽然人工智能带来不可否认的便利，但过度依赖可能削弱人类创造力。',usage:'让步型开头，先承认优点再提出隐忧',note:'可用 From my perspective / As far as I am concerned / I firmly believe'},
+{id:'tr4',cat:'transition',type:'开头段',en:'As globalization continues to reshape the world, societies are becoming more interconnected than ever before.',zh:'随着全球化持续重塑世界，各国社会比以往任何时候都更加紧密相连。',usage:'全球化、社会类开头',note:'可接 However, such transformation also brings about complex social challenges.'},
+{id:'tr5',cat:'transition',type:'开头段',en:'As modern technology continues to evolve at an unprecedented pace, society is confronted with both opportunities and uncertainties.',zh:'随着现代技术以前所未有的速度发展，社会既面临机遇也面临不确定性。',usage:'问题引入型开头，第一句时代变化',note:'后面接 This trend inevitably raises the question of ...'},
+{id:'tr6',cat:'transition',type:'开头段',en:'This trend inevitably raises the question of whether technological progress truly benefits young people.',zh:'这一趋势不可避免地引出问题：技术进步是否真正有益于年轻人。',usage:'提出核心问题',note:'可用 whether ... truly benefits ... 结构'},
+{id:'tr7',cat:'transition',type:'开头段',en:'I would argue that its advantages outweigh the potential drawbacks.',zh:'我认为其利大于弊。',usage:'表明立场',note:'常用于问题引入型结尾'},
+{id:'tr8',cat:'transition',type:'开头段',en:'In today’s fast-paced and highly competitive society, young people are confronted with increasing expectations and responsibilities.',zh:'在当今快节奏、竞争激烈的社会中，年轻人面临越来越多的期望与责任。',usage:'个人成长类开头',note:'宏观背景 + 群体压力'},
+{id:'tr9',cat:'transition',type:'开头段',en:'Against this backdrop, the cultivation of resilience and independence has become more important than ever.',zh:'在此背景下，培养韧性和独立能力变得比以往更加重要。',usage:'强调主题重要性',note:'个人成长类常用'},
+{id:'tr10',cat:'transition',type:'开头段',en:'From my perspective, these qualities are indispensable for long-term success.',zh:'在我看来，这些品质对长期成功不可或缺。',usage:'明确立场',note:'indispensable for 非常高频'},
+{id:'tr11',cat:'transition',type:'开头段',en:'In today’s increasingly competitive and knowledge-driven society, education plays a pivotal role in shaping individuals’ future.',zh:'在当今竞争日益激烈、知识驱动的社会中，教育在塑造个人未来方面起关键作用。',usage:'教育类开头',note:'pivotal role 高分表达'},
+{id:'tr12',cat:'transition',type:'开头段',en:'Under such circumstances, the purpose of higher education has become a subject of growing concern.',zh:'在这种情况下，高等教育的目的已成为日益受关注的话题。',usage:'收缩到教育议题',note:'subject of growing concern 常用'},
+{id:'tr13',cat:'transition',type:'开头段',en:'I firmly believe that universities should prioritize cultivating practical skills alongside theoretical knowledge.',zh:'我坚信大学应在培养理论知识的同时，优先培养实践技能。',usage:'教育类立场句',note:'prioritize doing A alongside B'},
+{id:'tr14',cat:'transition',type:'开头段',en:'People used to lead stable, predictable lives. Today’s fast-changing, competitive society, however, brings growing pressure across life.',zh:'过去人们生活稳定可预期，然而当今快速变化的竞争社会给生活带来越来越大的压力。',usage:'过去与现在对比',note:'对比转折型开头'},
+{id:'tr15',cat:'transition',type:'开头段',en:'Against this background, balancing work and personal well-being matters more than ever.',zh:'在这一背景下，平衡工作与个人幸福感变得比以往更重要。',usage:'引出主题',note:'balancing A and B matters more than ever'},
+{id:'tr16',cat:'transition',type:'开头段',en:'I am convinced that maintaining such balance is crucial to sustainable development.',zh:'我相信保持这种平衡对可持续发展至关重要。',usage:'表达观点',note:'be crucial to / for'},
+{id:'tr17',cat:'transition',type:'开头段',en:'While society has witnessed remarkable educational progress in recent decades, new challenges have gradually emerged.',zh:'尽管近几十年来社会见证了显著的教育进步，但新挑战也逐渐出现。',usage:'进步与问题对比',note:'While 引导让步'},
+{id:'tr18',cat:'transition',type:'开头段',en:'Against this backdrop, the issue of academic pressure among students deserves serious attention.',zh:'在此背景下，学生学业压力问题值得认真关注。',usage:'引入问题',note:'deserve serious attention 常用'},
+{id:'tr19',cat:'transition',type:'开头段',en:'From my perspective, reducing excessive pressure is essential for students’ long-term development.',zh:'在我看来，减少过度压力对学生的长远发展至关重要。',usage:'表明立场',note:'be essential for'},
+{id:'tr20',cat:'transition',type:'开头段',en:'The world today is grappling with a multitude of environmental challenges.',zh:'当今世界正面临众多环境挑战。',usage:'环境类开头',note:'grapple with 比 face 更高级'},
+{id:'tr21',cat:'transition',type:'开头段',en:'Under such circumstances, the urgency of sustainable development cannot be overlooked.',zh:'在这种情况下，可持续发展的紧迫性不容忽视。',usage:'引出环境议题',note:'cannot be overlooked'},
+{id:'tr22',cat:'transition',type:'开头段',en:'From my perspective, adopting green practices is not merely an option but a necessity.',zh:'在我看来，采取绿色做法不仅是一种选择，更是一种必要。',usage:'环境类立场句',note:'not merely ... but ...'},
+{id:'tr23',cat:'transition',type:'开头段',en:'Although industrialization has greatly improved living standards, it has also given rise to serious environmental concerns.',zh:'尽管工业化极大改善了生活水平，但也引发了严重的环境问题。',usage:'让步型环境开头',note:'give rise to 高分表达'},
+{id:'tr24',cat:'transition',type:'开头段',en:'This paradox has triggered widespread reflection on sustainable growth.',zh:'这一矛盾引发了人们对可持续增长的广泛反思。',usage:'承上启下',note:'trigger widespread reflection on'},
+{id:'tr25',cat:'transition',type:'开头段',en:'I would argue that economic development should not come at the expense of ecological balance.',zh:'我认为经济发展不应以牺牲生态平衡为代价。',usage:'环境类立场句',note:'at the expense of'},
+{id:'tr26',cat:'transition',type:'开头段',en:'As society undergoes profound transformation, traditional values are being constantly redefined.',zh:'随着社会经历深刻变革，传统价值也在不断被重新定义。',usage:'价值反思型开头',note:'undergo profound transformation'},
+{id:'tr27',cat:'transition',type:'开头段',en:'This shift has sparked intense discussion about the priorities of modern life.',zh:'这一转变引发了关于现代生活优先级的激烈讨论。',usage:'引入价值观议题',note:'spark intense discussion'},
+{id:'tr28',cat:'transition',type:'开头段',en:'Personally speaking, maintaining a clear sense of purpose remains essential despite rapid social change.',zh:'就我个人而言，尽管社会快速变化，保持清晰的目标感仍然至关重要。',usage:'价值反思型立场句',note:'despite + n. / doing'},
+{id:'tr29',cat:'transition',type:'结尾句',en:'In conclusion, although challenges inevitably exist, it is undeniable that the benefits outweigh the drawbacks.',zh:'总之，尽管挑战不可避免，但利大于弊不可否认。',usage:'总结 + 重申立场',note:'六级结尾万能句'},
+{id:'tr30',cat:'transition',type:'结尾句',en:'Only through rational guidance and collective efforts can we fully harness its potential.',zh:'只有通过理性引导和共同努力，我们才能充分发挥其潜力。',usage:'强调条件',note:'Only through ... can we ... 倒装'},
+{id:'tr31',cat:'transition',type:'结尾句',en:'To sum up, despite the existing concerns, I remain convinced that this trend is ultimately beneficial to both individuals and society as a whole.',zh:'总而言之，尽管存在担忧，我仍然相信这一趋势最终有利于个人和整个社会。',usage:'总结 + 让步 + 重申',note:'be beneficial to both A and B'},
+{id:'tr32',cat:'transition',type:'结尾句',en:'Therefore, it is imperative for individuals, institutions and the government to work collaboratively to address this issue in a constructive and sustainable manner.',zh:'因此，个人、机构和政府必须协同合作，以建设性、可持续的方式解决这一问题。',usage:'呼吁行动',note:'it is imperative for sb to do'},
+{id:'tr33',cat:'transition',type:'结尾句',en:'Only when all parties assume their respective responsibilities can we create a more harmonious and promising future.',zh:'只有各方承担起各自责任，我们才能创造更和谐、更有前景的未来。',usage:'呼吁行动 + 倒装',note:'Only when ... can we ...'},
+{id:'tr34',cat:'transition',type:'结尾句',en:'From a long-term perspective, making informed and balanced choices today will lay a solid foundation for sustainable development tomorrow.',zh:'从长远来看，今天做出理性而平衡的选择，将为未来的可持续发展奠定基础。',usage:'未来展望',note:'lay a solid foundation for'},
+{id:'tr35',cat:'transition',type:'结尾句',en:'After all, the decisions we make today will profoundly shape the world of tomorrow.',zh:'毕竟，我们今天的决定将深刻影响未来的世界。',usage:'未来展望，适合青年话题',note:'shape the world of tomorrow'},
+{id:'tr36',cat:'transition',type:'结尾句',en:'While no solution is flawless, a balanced and pragmatic approach is undoubtedly the most viable path forward.',zh:'尽管没有完美的解决方案，但理性务实的方式无疑是最可行的道路。',usage:'理性反思',note:'the most viable path forward'},
+{id:'tr37',cat:'transition',type:'结尾句',en:'If guided properly, this development can become a powerful driving force rather than a potential threat.',zh:'如果加以正确引导，这一发展将成为推动力，而非潜在威胁。',usage:'理性反思 + 条件',note:'A rather than B'},
+{id:'tr38',cat:'transition',type:'结尾句',en:'Ultimately, what truly matters is not merely progress itself, but the direction in which it leads us.',zh:'归根结底，真正重要的不是进步本身，而是它将我们引向何方。',usage:'升华',note:'not merely A, but B'},
+{id:'tr39',cat:'transition',type:'结尾句',en:'In essence, striking a delicate balance between innovation and responsibility is the key to achieving lasting prosperity.',zh:'本质上，在创新与责任之间取得微妙平衡，是实现长久繁荣的关键。',usage:'升华',note:'strike a balance between A and B'},
+{id:'tr40',cat:'transition',type:'衔接词',en:'Because / Since / As / Given that / Considering that',zh:'因为；由于；考虑到',usage:'原因状语从句引导词',note:'Since technological innovation is accelerating, individuals must adapt accordingly.'},
+{id:'tr41',cat:'transition',type:'衔接词',en:'because of / due to / owing to / as a result of / in light of / on the grounds of',zh:'因为；由于；基于',usage:'后接名词或动名词',note:'Due to rapid urbanization, environmental problems have intensified.'},
+{id:'tr42',cat:'transition',type:'衔接词',en:'in a bid to / so as to / with the aim of / for the purpose of',zh:'为了；旨在',usage:'表目的',note:'In a bid to enhance efficiency, companies are adopting advanced technologies.'},
+{id:'tr43',cat:'transition',type:'衔接词',en:'Therefore / Thus / Consequently / As a result / Hence / Accordingly',zh:'因此；所以',usage:'结果逻辑副词',note:'Therefore, we must take action.'},
+{id:'tr44',cat:'transition',type:'衔接词',en:'Although / Though / Even though / Whereas',zh:'虽然；尽管；然而',usage:'让步从句',note:'Although AI brings substantial benefits, it poses potential threats.'},
+{id:'tr45',cat:'transition',type:'衔接词',en:'Despite / In spite of',zh:'尽管',usage:'后接名词或动名词',note:'She succeeded despite scores of challenges.'},
+{id:'tr46',cat:'transition',type:'衔接词',en:'While it is true that…, …',zh:'虽然确实……，但……',usage:'让步并转折',note:'While it is true that technology enhances efficiency, it may also create dependency.'},
+{id:'tr47',cat:'transition',type:'衔接词',en:'First and foremost / Notably / Ultimately',zh:'首先；值得注意的是；最终',usage:'递进',note:'可交叉使用形成自己的固定表达'},
+{id:'tr48',cat:'transition',type:'衔接词',en:'However / Nevertheless / Nonetheless / By contrast / Conversely',zh:'然而；尽管如此；相反',usage:'转折对比',note:'However, such progress comes at a cost.'},
+{id:'tr49',cat:'transition',type:'衔接词',en:'For example / For instance / To illustrate / A case in point is that',zh:'例如；举例来说；一个典型例子是',usage:'举例',note:'The rapid growth of online education serves as a compelling example of technological transformation.'},
+{id:'tr50',cat:'transition',type:'衔接词',en:'In conclusion / In summary / To conclude / All things considered',zh:'总之；综上所述；全面考虑',usage:'总结',note:'推荐固定使用一至两组，避免混乱'}
+];
+
+let cards=SEED;
+function loadState(){
+ try{return JSON.parse(localStorage.getItem(STORE_KEY))||{progress:{},custom:[],lastDate:''}}catch(e){return {progress:{},custom:[],lastDate:''}}
+}
+function saveState(){localStorage.setItem(STORE_KEY,JSON.stringify(state))}
+function today(){return new Date().toISOString().slice(0,10)}
+function catName(id){return (CATS.find(c=>c.id===id)||{}).name||id}
+function initCards(){cards=SEED.concat(state.custom||[])}
+function dueCards(){
+ const now=Date.now(); const t=today();
+ if(state.lastDate!==t){state.lastDate=t; state.dailyDone=0; saveState();}
+ const result=[];
+ for(const c of cards){
+  const p=state.progress[c.id];
+  if(!p){result.push(c); continue;}
+  if(p.next && p.next<=now) result.push(c);
+ }
+ return result;
+}
+function newCardsForToday(limit){
+ const seen=new Set(Object.keys(state.progress));
+ const notStarted=cards.filter(c=>!seen.has(c.id));
+ const todayCount=notStarted.filter(c=>!state.progress[c.id]).length;
+ return notStarted.slice(0,Math.max(0,limit-state.dailyDone));
+}
+function buildQueue(){
+ const due=dueCards();
+ const news=newCardsForToday(DEFAULT_NEW);
+ const combined=[...due];
+ for(const c of news){if(!combined.some(x=>x.id===c.id)) combined.push(c);}
+ queue=combined;
+ queueIndex=0;
+ currentCard=queue[0]||null;
+ revealed=false;
+}
+function schedule(level){
+ const now=Date.now();
+ if(level===0)return now+5*60*1000;
+ if(level===1)return now+24*60*60*1000;
+ if(level===2)return now+3*24*60*60*1000;
+ if(level===3)return now+7*24*60*60*1000;
+ return now+14*24*60*60*1000;
+}
+function answer(quality){
+ if(!currentCard)return;
+ const p=state.progress[currentCard.id]||{level:0,seen:0,next:0};
+ p.seen=(p.seen||0)+1;
+ if(quality==='again'){p.level=Math.max(0,p.level-1); p.next=schedule(0);}
+ if(quality==='hard'){p.level=Math.max(0,p.level-1); p.next=schedule(Math.max(0,p.level));}
+ if(quality==='good'){p.level=Math.min(4,p.level+1); p.next=schedule(p.level);}
+ if(quality==='easy'){p.level=Math.min(4,p.level+2); p.next=schedule(p.level);}
+ state.progress[currentCard.id]=p;
+ if(!p._started){state.dailyDone=(state.dailyDone||0)+1; p._started=true;}
+ saveState();
+ queueIndex++;
+ currentCard=queue[queueIndex]||null;
+ revealed=false;
+ render();
+}
+function reveal(){revealed=true; render();}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function catFiltered(){return cards.filter(c=>catFilter==='all'||c.cat===catFilter)}
+function render(){
+ const app=document.getElementById('app');
+ const due=dueCards().length;
+ const newN=Math.max(0,DEFAULT_NEW-(state.dailyDone||0));
+ const known=Object.keys(state.progress).length;
+ if(view==='learn'){
+  if(currentCard){
+   const c=currentCard;
+   app.innerHTML='<div class="top"><h1>今日学习</h1><div class="day">'+queueIndex+' / '+queue.length+'</div></div><div class="study-card"><div><div class="tag">'+esc(catName(c.cat))+' · '+esc(c.type||'句型')+'</div><div class="zh">'+esc(c.zh)+'</div><div class="usage">'+esc(c.usage||'')+'</div><div class="en '+(!revealed?'hidden':'')+'" onclick="reveal()">'+esc(c.en)+'</div><div class="note '+(!revealed?'hidden':'')+'">'+esc(c.note||'')+'</div></div><div class="buttons '+(revealed?'':'hidden')+'"><button class="btn danger" onclick="answer('again')">忘记</button><button class="btn warn" onclick="answer('hard')">模糊</button><button class="btn ok" onclick="answer('good')">认识</button></div><div class="buttons '+(revealed?'hidden':'')+'"><button class="btn primary" onclick="reveal()">显示英文</button></div></div>';
+  }else{
+   app.innerHTML='<div class="top"><h1>今日学习</h1><div class="day">'+today()+'</div></div><div class="hero"><div class="label">今日任务</div><div class="count">'+due+'</div><div class="sub">待复习 '+due+' 张 · 今日新学还可 '+newN+' 张</div></div><div class="empty">今天的卡片已完成。<br>可以去分类里预习或添加新素材。</div>';
+  }
+ }
+ if(view==='cats'){
+  const list=CATS.map(c=>'<div class="cat" onclick="startCat(''+c.id+'')"><div><div class="name">'+esc(c.name)+'</div><div class="meta">'+esc(c.desc)+' · '+cards.filter(x=>x.cat===c.id).length+' 张</div></div><div class="go">开始 ??</div></div>').join('');
+  const types=['all','开头段','结尾句','衔接词','句型','模板','论证法'];
+  const chips=types.map(t=>'<div class="chip '+(typeFilter===t?'active':'')+'" onclick="setType(''+t+'')">'+(t==='all'?'全部':t)+'</div>').join('');
+  app.innerHTML='<div class="top"><h1>句型分类</h1><div class="day">共 '+cards.length+' 张</div></div><div class="chip-row">'+chips+'</div><div class="cat-list">'+list+'</div>';
+ }
+ if(view==='me'){
+  const todayCount=Object.values(state.progress).filter(p=>p.seen>0).length;
+  app.innerHTML='<div class="top"><h1>我的</h1><div class="day">学习记录</div></div><div class="stat-row"><div class="stat"><b>'+cards.length+'</b><span>总卡片</span></div><div class="stat"><b>'+known+'</b><span>学过</span></div><div class="stat"><b>'+todayCount+'</b><span>累计见过</span></div></div><div class="section-title">添加自己的句型</div><div><label>分类</label><select id="newCat">'+CATS.map(c=>'<option value="'+c.id+'">'+esc(c.name)+'</option>').join('')+'</select><label>类型</label><input id="newType" placeholder="例如：高级表达 / 开头句"><label>中文意思</label><textarea id="newZh" rows="3" placeholder="例如：在我看来……"></textarea><label>英文句型</label><textarea id="newEn" rows="3" placeholder="From my perspective, ..."></textarea><label>用法说明</label><input id="newUsage" placeholder="例如：表达个人观点"><label>备注</label><input id="newNote" placeholder="可替换词、注意事项"><button class="btn primary" style="width:100%;margin-top:14px" onclick="addCustom()">保存到素材库</button></div>';
+ }
+ const navs=document.querySelectorAll('.nav');
+ navs.forEach(n=>n.classList.toggle('active',n.dataset.view===view));
+}
+function setType(t){typeFilter=t; render();}
+function startCat(id){catFilter=id; view='learn'; buildQueue(); render();}
+function addCustom(){
+ const c={id:'c'+Date.now(),cat:document.getElementById('newCat').value,type:document.getElementById('newType').value||'句型',zh:document.getElementById('newZh').value.trim(),en:document.getElementById('newEn').value.trim(),usage:document.getElementById('newUsage').value.trim(),note:document.getElementById('newNote').value.trim()};
+ if(!c.zh||!c.en){alert('请至少填写中文意思和英文句型'); return;}
+ state.custom.push(c); saveState(); initCards(); view='cats'; catFilter='all'; render();
+}
+document.getElementById('bottomNav').addEventListener('click',e=>{
+ const btn=e.target.closest('.nav'); if(!btn)return;
+ view=btn.dataset.view;
+ if(view==='learn'){catFilter='all'; buildQueue();}
+ render();
+});
+initCards();
+buildQueue();
+render();
+</script>
+</body>
+</html>
